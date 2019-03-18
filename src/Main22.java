@@ -7,9 +7,9 @@ public class Main22 {
     public static int[] diStringMatch(String S) {
         int [] ans=new int[S.length()+1];
         for (int i = 0; i < S.split("").length; i++) {
-            if()
+//            if()
         }
-        return asIt(S.length()+1,S).get(0);
+        return ans;
     }
 
 
