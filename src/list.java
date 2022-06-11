@@ -1,7 +1,7 @@
 public class list {
     public static void main(String[] args) {
-        int size = 100;
-        int[] list = new int [size];
+        int size = 90;
+        long[] list = new long [size];
         list[0] = 0;
         list[1] = 1;
         list[2] = list[0] + list[1];
