@@ -1,6 +1,6 @@
 public class list {
     public static void main(String[] args) {
-        int size = 10;
+        int size = 100;
         int[] list = new int [size];
         list[0] = 0;
         list[1] = 1;
