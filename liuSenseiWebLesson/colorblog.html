@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登入模擬</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<body>
+<form action="">
+    Input: <input id="number" type="text" name="a"><br>
+    <button id="red" type="button">RED!</button><br>
+    <button id="green" type="button">GREEN!</button><br>
+    Color: <span id="answer"></span>
+</form>
+<script>
+    $(document).ready(function(){
+        $("#red").click(function(){
+            var c =$("#number").val();
+            $("#answer").css("color","red");
+            $("#answer").html(c);
+        })
+        $("#green").click(function(){
+            var c =$("#number").val();
+            $("#answer").css("color","green");
+            $("#answer").html(c);
+        })
+    })
+</script>
+

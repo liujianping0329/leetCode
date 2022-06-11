@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>計算斜邊</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<body>
+<form action="">
+    長邊: <input id="naga" type="text" name="a"><br>
+    短編: <input id="miti" type="text" name="b">
+    <button id="kesann" type="button">計算!</button><br>
+    答案: <span id="answer"></span>
+</form>
+<script>
+    $(document).ready(function(){
+        $("#kesann").click(function(){
+            var a=$("#naga").val();
+            var b=$("#miti").val();
+            console.log(a);
+            $("#answer").text(Math.sqrt(a*a+b*b));
+        });
+    });
+</script>
+
+
+</body>
+</html>

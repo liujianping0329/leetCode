@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登入模擬</title>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<body>
+<form action="">
+    帳號: <input id="naga" type="text" name="a"><br>
+    密碼: <input id="miti" type="text" name="b">
+    <button id="loading" type="button">登入!</button><br>
+    成功與否: <span id="answer"></span>
+</form>
+<script>
+    $(document).ready(function(){
+        $("#loading").click(function(){
+            var a=$("#naga").val();
+            var b=$("#miti").val();
+            console.log(a);
+            if(a!=3){
+                $("#answer").text("Fl");
+            }
+            if(a==3){
+                if(b==4){
+                    $("#answer").text("tr");
+                }
+                else{
+                    $("#answer").text("False");
+                }
+
+            }
+
+
+        });
+    });
+</script>
+
+
+
+
+if(a==3&&b==4){
+$("#answer").text("True");
+}
+else {
+$("#answer").text("False");
+}
