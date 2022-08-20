@@ -2,28 +2,31 @@ public class Continents {
     public static void main(String[] args) {
         int continent = 4;
         switch (continent) {
-            case continent = 1:
+            case 1:
                 System.out.println("North America: Mexico City, Mexico");
+                break;
 
-            case continent = 2:
+            case 2:
                 System.out.println("South America: Sao Paulo, Brazil");
+                break;
 
-            case continent = 3:
+            case 3:
                 System.out.println("Europe: Moscow, Russia");
-
-            case continent = 4:
+                break;
+            case 4:
                 System.out.println("Africa: Lagos, Nigeria");
-
-            case continent = 5:
+                break;
+            case 5:
                 System.out.println("Asia: Shanghai, China");
-
-            case continent = 6:
+                break;
+            case 6:
                 System.out.println("Australia: Sydney, Australia");
-
-            case continent = 7:
+                break;
+            case 7:
                 System.out.println("Antarctica: McMurdo Station, US");
-
-            default{System.out.println("Undefined continent!");}
+                break;
+            default:
+                System.out.println("Undefined continent!");
         }
 
 
