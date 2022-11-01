@@ -1,0 +1,102 @@
+body{
+
+    background-color: black;
+}
+#article div{
+
+}
+
+#article-title{
+    background-color: crimson;
+    margin: 0 auto;
+    width: 600px;
+    height: 50px;
+    font-size: 40px;
+}
+
+
+.table{
+    margin: auto;
+    width: 100%;
+    height: 1000px;
+    box-shadow: 5px 5px 5px 15px #322110 inset;
+}
+
+.box1{
+    width: 100%;
+    height: 100px;
+    box-shadow: 5px 5px 5px 15px #322110 inset;
+}
+
+.left{
+    float: left;
+    width: 30%;
+    height: 100px;
+    position: relative;
+
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.mid{
+    float: left;
+    width: 40%;
+    height: 100px;
+    background-color: blue;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+}
+
+.right{
+    float: left;
+    width: 30%;
+    height: 100px;
+    background-color: #ff8000;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.back {
+    background-color: rgba(255,255,255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 30px;
+
+
+}
+.laftname1{
+    margin-top: 60px;
+
+}
+
+.laftname2{
+    margin-top: 60px;
+}
+
+.laftname3{
+    margin-top: 60px;
+}
+
+
+.rightname1{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.rightname2{
+    text-align: center;
+    margin-top: 60px;
+}
+.rightname3{
+    text-align: center;
+    margin-top: 60px;
+}
+.img1 {
+    height: 100px;
+    width: 30%;
+}
