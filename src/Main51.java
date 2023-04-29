@@ -39,7 +39,7 @@ public class Main51 {
     }
     public static void main(String[] args) {
         Main51 main51=new Main51();
-        int res = main51.romanToInt("MCMXCIV"); //2216
+        int res = main51.romanToInt("MCMXCIV");
         System.out.print(res);
     }
 }

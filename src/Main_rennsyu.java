@@ -1,15 +1,39 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
 public class Main_rennsyu {
-    public boolean isPalindrome(int x) {
-        String string = x+"";
-        String string1 = new StringBuffer(string).reverse().toString();
-        if (string1.equals(string)){
-            return true;
+    public String longestCommonPrefix(String[] strs) {
+        int index=0;
+        for (int i = 0; i < 200; i++) {
+            if ("".equals(strs[0])) return "";
+            if (i>strs[0].length()) break;
+            String firstMoji = strs[0].split("")[i];
+            int cou = 1;
+            for (int j = 1; j < strs.length; j++) {
+                if (i<strs[j].length()){
+                    if(strs[j].split("")[i].equals(firstMoji)){
+                        cou++;
+                }else {
+                        break;
+                    }
+                }
+                if(cou==strs.length){
+                    index=i;
+                }else if(i==0&&cou!=strs.length){
+                    index=-1;
+                    break;
+                }else{
+                    break;
+                }
+            }
         }
-        return false;
+        return strs[0].substring(0,index+1);
     }
+
     public static void main(String[] args) {
-        Main_rennsyu main51=new Main_rennsyu();
-        boolean res = main51.isPalindrome(121);
-            System.out.print(res);
+        Main52 main52=new Main52();
+        String res = main52.longestCommonPrefix(new String[]{"a","a","a"});
+        System.out.print(res);
     }
 }
